@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 2rem;
+}
+.content {
+  margin: auto;
+  max-width: 900px;
+}
+.head {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.head h1 {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: #000000;
+}
+.para-text:nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.para-text:nth-child(2) {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 27px;
+  color: #000000;
+}
+.text {
+  width: 350px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+  gap: 3rem;
+}
+img {
+  width: 190px;
+}
+.pics {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 260px;
+}
+.pics:nth-child(2),
+.pics:nth-child(5) {
+  margin-top: 4rem;
+}
+
+footer {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 17px;
+  color: #bdbdbd;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  margin: 2rem 0 0 0;
+  text-align: center;
+}
+footer a {
+  font-weight: 700;
+  color: #bdbdbd;
+  text-decoration: none;
+}
+.context p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.caption {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 1.8rem;
+  transform: rotate(90deg);
+  position: absolute;
+  left: 8.5rem;
+  top: 3rem;
+}
+#special {
+  margin-left: 1rem;
+}
+@media (max-width: 700px) {
+  .head {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  .text p {
+    margin: 2rem 0;
+  }
+  .images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 250px;
+  }
+  .head h1 {
+    width: 300px;
+  }
+  img {
+    width: 150px;
+  }
+  .pics:nth-child(2),
+  .pics:nth-child(4),
+  .pics:nth-child(6) {
+    margin-top: 4rem;
+  }
+  .pics:nth-child(5) {
+    margin-top: 0;
+  }
+  .text {
+    margin: 2rem 0;
+  }
+  .caption {
+    position: absolute;
+    left: 6rem;
+    top: 3rem;
+  }
+  .pics {
+    width: 220px;
+  }
+}
